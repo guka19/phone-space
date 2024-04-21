@@ -1,0 +1,120 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 300px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.nav-menu ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: "ALK Rounded Mtav Med", sans-serif;
+  transition: all ease 0.25s;
+}
+
+.nav-menu ul li a {
+  transition: all ease 0.25s;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-menu ul li:hover {
+  color: #a855f7;
+  cursor: pointer;
+}
+
+.nav-menu ul li:hover a {
+  color: #a855f7;
+}
+
+.user-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.burger {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1320px) {
+
+    .logo img {
+        width: 200px;
+    }
+
+    .nav-menu ul li {
+        font-size: 12px;
+    }
+
+    :host ::ng-deep {
+        .btn {
+            padding: 6px 8px;
+            font-size: 12px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 994px) {
+
+    nav {
+        padding: 5px 10px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .nav-menu ul li {
+        font-size: 10px;
+    }
+
+    :host ::ng-deep {
+        .btn {
+            padding: 6px 8px;
+            font-size: 10px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 870px) {
+    .burger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}

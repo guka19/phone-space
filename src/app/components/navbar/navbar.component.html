@@ -1,0 +1,35 @@
+<nav>
+    <div class="logo">
+        <a routerLink="/">
+            <img src="assets/images/logo.PNG" alt="PHONESPACE.GE">
+        </a>
+    </div>
+    <div class="menu">
+        <div class="nav-menu">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a routerLink="/">მთავარი</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile"></i>
+                    <a routerLink="/smartphones">სმარტფონები</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-ticket"></i>
+                    <a routerLink="/offers">შეთავაზებები</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-question"></i>
+                    <a routerLink="/about-us">ჩვენს შესახებ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user-menu">
+            <p-button styleClass="btn" label="ავტორიზაცია" severity="help" icon="pi pi-sign-in" *ngIf="!isLoggedIn"></p-button>
+            <p-button styleClass="btn" label="რეგისტრაცია" severity="help" [text]="true" icon="pi pi-user" *ngIf="!isLoggedIn"></p-button>
+            <p-button label="გასვლა" severity="help" icon="pi pi-sign-out" *ngIf="isLoggedIn"></p-button>
+        </div>
+    </div>
+    <app-burger class="burger"></app-burger>
+</nav>
