@@ -1,9 +1,65 @@
 .container {
     display: flex;
     flex-direction: column;
+    padding: 100px 15%;
+    margin: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    background: linear-gradient(to right, #a885f7, #ff7e5f, #a885f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+}
+
+.info {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 540;
+    color: rgb(67, 67, 67);
+    max-width: 60%;
+}
+
+.explore-button {
+    display: flex;
+    padding: 12px 14px;
+    background: linear-gradient(to right, #a885f7, #9c8ac6);
+    border: #a885f7 1px solid;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s ease;
+}
+
+.explore-button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 300px;
+    margin: 0;
+}
+
+.brands {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 25px;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .slider-container {

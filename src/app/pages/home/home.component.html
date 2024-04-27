@@ -1,5 +1,18 @@
-<div class="container">
-    <div class="slider-container">
-        <app-image-slider [images]="images"></app-image-slider>
-    </div>
-</div>
+<main class="container">
+    <section class="intro">
+        <div>
+            <h1 class="title">Discover the Future of Connectivity</h1>
+            <p class="info">
+                Welcome to PhoneSpace, Dive into a world of smartphones, sleek designs, and powerful features that redefine connectivity. Explore our collection of devices and embark on a journey towards a smarter, more connected future!
+            </p>
+            <button class="explore-button">Explore</button>
+        </div>
+        <img class="avatar" src="assets/images/avatar.png" alt="">
+    </section>
+    <section class="brands">
+        <span>Top Brands</span>
+        <div class="slider-container">
+            <app-image-slider [images]="images"></app-image-slider>
+        </div>
+    </section>
+</main>
