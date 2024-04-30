@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="image-space">
+        <img class="image" [src]="smartphone.imageUrls[0]" [alt]="smartphone.model">
+    </div>
+    <div class="info">
+        <p class="price"> {{smartphone.price}}$ </p>
+        <span class="product-title"> {{ smartphone.brand }} {{ smartphone.model }} / {{smartphone.storage}}GB </span>
+    </div>
+    <div class="buttons">
+        <button class="compare-button"><i class="pi pi-arrows-h"></i></button>
+        <button class="cart-button"><i class="pi pi-shopping-cart"></i></button>
+    </div>
+</div>

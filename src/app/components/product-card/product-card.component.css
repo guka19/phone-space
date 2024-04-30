@@ -1,0 +1,84 @@
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 0.08rem rgb(194, 192, 192);
+}
+
+.image-space {
+    border-bottom: 1px solid #333;
+}
+
+.image {
+    width: 250px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 8px 0;
+    text-align: start;
+    gap: 10px;
+}
+
+.price {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color: #333;
+    margin: 0;
+}
+
+.product-title {
+    font-family: 'Poppins' sans-serif;
+    font-weight: 450;
+    font-family: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.cart-button {
+    display: flex;
+    padding: 12px 14px;
+    background: linear-gradient(to right, #a885f7, #9c8ac6);
+    border: #a885f7 1px solid;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s ease;
+}
+
+.cart-button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cart-button:active {
+    background: white;
+    color: #a885f7;
+}
+
+.compare-button {
+    display: flex;
+    padding: 12px 14px;
+    background: #333;
+    border: #333 1px solid;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.4s ease;
+    color: #ffffff;
+}
+
+.compare-button:hover {
+    cursor: pointer;
+    border-radius: 10px;
+}

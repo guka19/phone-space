@@ -1,4 +1,4 @@
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +44,7 @@ nav {
   transition: all ease 0.25s;
   text-decoration: none;
   color: #000000;
+  font-size: 20px;
 }
 
 .nav-menu ul li:hover {
@@ -66,6 +67,13 @@ nav {
     display: none;
 }
 
+
+:host ::ng-deep {
+  .btn {
+      padding: 12px 14px;
+      font-size: 12px;
+  }
+}
 
 @media only screen and (max-width: 1320px) {
 

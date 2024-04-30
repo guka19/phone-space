@@ -1,4 +1,4 @@
-<nav>
+<header>
     <div class="logo">
         <a routerLink="/">
             <img src="assets/images/logo.PNG" alt="PHONESPACE.GE">
@@ -9,27 +9,27 @@
             <ul>
                 <li>
                     <i class="fa-solid fa-house"></i>
-                    <a routerLink="/">მთავარი</a>
+                    <a routerLink="/">Home</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-mobile"></i>
-                    <a routerLink="/smartphones">სმარტფონები</a>
+                    <a routerLink="/smartphones">Smartphones</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-ticket"></i>
-                    <a routerLink="/offers">შეთავაზებები</a>
+                    <a routerLink="/offers">Offers</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-circle-question"></i>
-                    <a routerLink="/about-us">ჩვენს შესახებ</a>
+                    <a routerLink="/about-us">About</a>
                 </li>
             </ul>
         </div>
         <div class="user-menu">
-            <p-button styleClass="btn" label="ავტორიზაცია" severity="help" icon="pi pi-sign-in" *ngIf="!isLoggedIn"></p-button>
-            <p-button styleClass="btn" label="რეგისტრაცია" severity="help" [text]="true" icon="pi pi-user" *ngIf="!isLoggedIn"></p-button>
+            <p-button styleClass="btn" label="Sign In" severity="help" icon="pi pi-sign-in" *ngIf="!isLoggedIn"></p-button>
+            <p-button styleClass="btn" label="Sign Up" severity="help" [text]="true" icon="pi pi-user" *ngIf="!isLoggedIn"></p-button>
             <p-button label="გასვლა" severity="help" icon="pi pi-sign-out" *ngIf="isLoggedIn"></p-button>
         </div>
     </div>
     <app-burger class="burger"></app-burger>
-</nav>
+</header>
