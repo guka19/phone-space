@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-smartphones',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./smartphones.component.css']
 })
 export class SmartphonesComponent {
+  
+  searchForm = this.fb.group({
+    brand: [''],
+    screenSize: [null],
+    operatingSystem: [''],
+  })
 
+  constructor(private fb: FormBuilder) {}
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, HammerModule } from '@angular/platform-browser';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { PrimengModule } from './shared/modules/primeng/primeng.module';
 
@@ -33,7 +34,8 @@ import { SmartphonesComponent } from './pages/smartphones/smartphones.component'
     BrowserModule,
     PrimengModule,
     HammerModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
