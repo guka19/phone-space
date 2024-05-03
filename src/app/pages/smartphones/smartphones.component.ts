@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Product } from 'src/app/shared/models/Product';
+import { SmartphoneService } from 'src/app/shared/services/smartphone.service';
 
 @Component({
   selector: 'app-smartphones',
@@ -7,12 +9,20 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./smartphones.component.css']
 })
 export class SmartphonesComponent {
-  
+
+  smartphones: Product[] = [];
+
   searchForm = this.fb.group({
+    priceMin: [0],
+    priceMax: [5000],
     brand: [''],
-    screenSize: [null],
-    operatingSystem: [''],
+    screenSize: [''],
+    ram: [0],
   })
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private smartphoneService: SmartphoneService) {
+    this.smartphoneService.getSmartphones().subscribe((data) => {
+      this.smartphones = data;
+    })
+  }
 }

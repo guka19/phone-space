@@ -1,5 +1,83 @@
-<main>
-    <section class="filter">
-        
-    </section>
-</main>
+<div class="container">
+    <main class="grid-container">
+        <nav>
+            <strong><i class="fa-solid fa-chevron-left"></i> Mobile Phones</strong>
+        </nav>
+        <aside class="filter">
+            <form [formGroup]="searchForm">
+                <div class="price">
+                    <div class="min">
+                        <span>MIN</span>
+                        <input type="number" formControlName="priceMin">
+                    </div>
+                    <div class="max">
+                        <span>MAX</span>
+                        <input type="number" formControlName="priceMax">
+                    </div>
+                </div>
+                <div class="brands">
+                    <div>
+                        <p-checkbox formControlName="brand" value="iphone" inputId="ip"></p-checkbox>
+                        <label for="ip">iPhone</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="brand" value="google" inputId="gg"></p-checkbox>
+                        <label for="gg">Google</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="brand" value="samsung" inputId="sm"></p-checkbox>
+                        <label for="sm">Samsung</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="brand" value="xiaomi" inputId="xm"></p-checkbox>
+                        <label for="xm">Xiaomi</label>
+                    </div>
+                    <p>See more...</p>
+                </div>
+                <div class="screen-size">
+                    <div>
+                        <p-checkbox formControlName="screenSize" value="6.2" inputId="6.2"></p-checkbox>
+                        <label for="6.2">6.2 Inch</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="screenSize" value="6.3" inputId="6.3"></p-checkbox>
+                        <label for="6.3">6.3 Inch</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="screenSize" value="6.1" inputId="6.1"></p-checkbox>
+                        <label for="6.1">6.1 Inch</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="screenSize" value="6.5" inputId="6.5"></p-checkbox>
+                        <label for="6.5">6.5 Inch</label>
+                    </div>
+                    <p>See more...</p>
+                </div>
+                <div class="ram">
+                    <div>
+                        <p-checkbox formControlName="ram" value="4" inputId="4"></p-checkbox>
+                        <label for="6.2">6.2 Inch</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="ram" value="6" inputId="6"></p-checkbox>
+                        <label for="6.3">6.3 Inch</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="ram" value="8" inputId="8"></p-checkbox>
+                        <label for="6.1">8 GB</label>
+                    </div>
+                    <div>
+                        <p-checkbox formControlName="ram" value="12" inputId="12"></p-checkbox>
+                        <label for="6.5">12 GB</label>
+                    </div>
+                    <p>See more...</p>
+                </div>
+            </form>
+        </aside>
+        <section class="smartphones">
+            <div *ngFor="let smartphone of smartphones">
+                <app-product-card [smartphone]="smartphone"></app-product-card>
+            </div>
+        </section>
+    </main>
+</div>

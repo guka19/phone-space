@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 import { ButtonModule } from 'primeng/button';
 import { Card, CardModule } from 'primeng/card';
 import { SliderModule } from 'primeng/slider';
+import { InputTextModule } from 'primeng/inputtext';
+import { CheckboxModule } from 'primeng/checkbox';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [],
@@ -11,12 +14,18 @@ import { SliderModule } from 'primeng/slider';
     CommonModule,
     ButtonModule,
     CardModule,
-    SliderModule
+    SliderModule,
+    InputTextModule,
+    CheckboxModule,
+    RadioButtonModule
   ],
   exports: [
     ButtonModule,   
     CardModule,
-    SliderModule
+    SliderModule,
+    InputTextModule,
+    CheckboxModule,
+    RadioButtonModule
   ]
 })
 export class PrimengModule { }

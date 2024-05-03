@@ -1,0 +1,30 @@
+.container {
+    margin: 60px;
+}
+
+.grid-container {
+    display: grid;
+    margin: 30px 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+nav {
+    grid-column: span 3;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-right: 1px solid #ddd;
+}
+
+.smartphones {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
