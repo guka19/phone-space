@@ -20,6 +20,12 @@ export class SmartphonesComponent {
     ram: [0],
   })
 
+  isFilterVisible = false;
+
+  toggleFilterVisibility() {
+    this.isFilterVisible = !this.isFilterVisible;
+  }
+
   constructor(private fb: FormBuilder, private smartphoneService: SmartphoneService) {
     this.smartphoneService.getSmartphones().subscribe((data) => {
       this.smartphones = data;

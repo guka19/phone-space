@@ -17,6 +17,10 @@ nav {
     padding-bottom: 30px;
 }
 
+nav span {
+    display: none;
+}
+
 nav strong a {
     color: black;
     text-decoration: none;
@@ -118,6 +122,10 @@ nav strong a {
     gap: 5px;
 }
 
+.mobile {
+    display: none;
+}
+
 .smartphones {
     grid-column: span 2;
     display: grid;
@@ -201,7 +209,26 @@ nav strong a {
 }
 
 @media screen and (max-width: 456px) {
-    .filter {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav span {
+        display: block;
+    }
+
+    .default {
         display: none;
+    }
+
+    .mobile {
+        display: grid;
+        grid-column: span 3;
+    }
+
+    .smartphones {
+        grid-column: span 3;
     }
 }
