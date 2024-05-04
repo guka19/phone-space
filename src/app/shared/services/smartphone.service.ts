@@ -8,7 +8,8 @@ import { Product } from '../models/Product';
 })
 export class SmartphoneService {
 
-  apiUrl = 'https://phone-space-api.onrender.com';
+  // apiUrl = 'https://phone-space-api.onrender.com';
+  apiUrl = 'http://localhost:3000';
 
   getSmartphones(): Observable<Product[]> {
     return this.http.get<Product[]>(`${this.apiUrl}/phone-space/smartphones`);

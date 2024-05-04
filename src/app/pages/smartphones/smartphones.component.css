@@ -3,10 +3,12 @@
 }
 
 .grid-container {
+    max-width: 1200px;
     display: grid;
     margin: 30px 60px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    justify-content: center;
 }
 
 nav {
@@ -15,11 +17,102 @@ nav {
     padding-bottom: 30px;
 }
 
+nav strong a {
+    color: black;
+    text-decoration: none;
+}
+
 .filter {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     border-right: 1px solid #ddd;
+}
+
+.filter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter form .filter-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter form .filter-clear {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter form .filter-clear strong {
+    font-size: 20px;
+}
+
+.filter form .filter-clear span  {
+    margin-right: 20px;
+    cursor: pointer;
+    color: rgb(105, 104, 104);
+    transition: all ease 0.2s;
+}
+
+.filter form .filter-clear span:hover {
+    color: #333;
+}
+
+.filter form .price {
+    padding: 15px 5px;
+}
+
+.filter form .price .price-inputs {
+    display: flex;
+    gap: 5px;
+}
+
+.filter form .price .price-inputs div {
+    display: flex;
+    gap: 5px;
+}
+
+.filter form .price .price-inputs div input {
+    border: 2px solid #333;
+    outline: none;
+    border-radius: 6px;
+}
+
+.filter .brands {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter .brands div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter .screen-size {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter .screen-size div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter .ram {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter .ram div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .smartphones {

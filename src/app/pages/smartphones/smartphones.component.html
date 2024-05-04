@@ -1,21 +1,29 @@
 <div class="container">
     <main class="grid-container">
         <nav>
-            <strong><i class="fa-solid fa-chevron-left"></i> Mobile Phones</strong>
+            <strong><a routerLink="/"><i class="fa-solid fa-chevron-left"></i> Mobile Phones</a></strong>
         </nav>
         <aside class="filter">
             <form [formGroup]="searchForm">
-                <div class="price">
-                    <div class="min">
-                        <span>MIN</span>
-                        <input type="number" formControlName="priceMin">
-                    </div>
-                    <div class="max">
-                        <span>MAX</span>
-                        <input type="number" formControlName="priceMax">
+                <div class="filter-clear filter-item">
+                    <strong>Filter</strong>
+                    <span><i class="fa-solid fa-trash"></i> Clear</span>
+                </div>
+                <div class="price filter-item">
+                    <strong>Price</strong>
+                    <div class="price-inputs">
+                        <div class="min">
+                            <span>Min</span>
+                            <input formControlName="priceMin">
+                        </div>
+                        <div class="max">
+                            <input formControlName="priceMax">
+                            <span>Max</span>
+                        </div>
                     </div>
                 </div>
-                <div class="brands">
+                <div class="brands filter-item">
+                    <strong>Brands</strong>
                     <div>
                         <p-checkbox formControlName="brand" value="iphone" inputId="ip"></p-checkbox>
                         <label for="ip">iPhone</label>
@@ -34,7 +42,8 @@
                     </div>
                     <p>See more...</p>
                 </div>
-                <div class="screen-size">
+                <div class="screen-size filter-item">
+                    <strong>Screen Size</strong>
                     <div>
                         <p-checkbox formControlName="screenSize" value="6.2" inputId="6.2"></p-checkbox>
                         <label for="6.2">6.2 Inch</label>
@@ -53,22 +62,22 @@
                     </div>
                     <p>See more...</p>
                 </div>
-                <div class="ram">
+                <div class="ram filter-item">
                     <div>
                         <p-checkbox formControlName="ram" value="4" inputId="4"></p-checkbox>
-                        <label for="6.2">6.2 Inch</label>
+                        <label for="4">4 GB</label>
                     </div>
                     <div>
                         <p-checkbox formControlName="ram" value="6" inputId="6"></p-checkbox>
-                        <label for="6.3">6.3 Inch</label>
+                        <label for="6">6 GB</label>
                     </div>
                     <div>
                         <p-checkbox formControlName="ram" value="8" inputId="8"></p-checkbox>
-                        <label for="6.1">8 GB</label>
+                        <label for="8">8 GB</label>
                     </div>
                     <div>
                         <p-checkbox formControlName="ram" value="12" inputId="12"></p-checkbox>
-                        <label for="6.5">12 GB</label>
+                        <label for="12">12 GB</label>
                     </div>
                     <p>See more...</p>
                 </div>

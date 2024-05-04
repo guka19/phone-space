@@ -3,30 +3,30 @@
     <ul class="menu-items" [ngClass]="{ 'active': isMenuOpen }">
         <li>
             <i class="fa-solid fa-house"></i>
-            <a routerLink="/">მთავარი</a>
+            <a routerLink="/">Home</a>
         </li>
         <li>
             <i class="fa-solid fa-mobile"></i>
-            <a routerLink="/smartphones">სმარტფონები</a>
+            <a routerLink="/smartphones">Smartphones</a>
         </li>
         <li>
             <i class="fa-solid fa-ticket"></i>
-            <a routerLink="/offers">შეთავაზებები</a>
+            <a routerLink="/offers">Offers</a>
         </li>
         <li>
             <i class="fa-solid fa-circle-question"></i>
-            <a routerLink="/about-us">ჩვენს შესახებ</a>
+            <a routerLink="/about-us">About</a>
         </li>
         <div class="line"></div>
         <li class="user">
             <a> 
-                <p-button icon="pi pi-sign-in" label="ავტორიზაცია" severity="help" *ngIf="!isLoggedIn"></p-button>
+                <p-button icon="pi pi-sign-in" label="Sign In" severity="help" *ngIf="!isLoggedIn"></p-button>
             </a>
             <a>
-                <p-button icon="pi pi-user" label="რეგისტრაცია" severity="help" [text]="true" *ngIf="!isLoggedIn"></p-button>
+                <p-button icon="pi pi-user" label="Sign Up" severity="help" [text]="true" *ngIf="!isLoggedIn"></p-button>
             </a>
             <a>
-                <p-button icon="pi pi-sign-out" label="გასვლა" severity="help" *ngIf="isLoggedIn"></p-button>
+                <p-button icon="pi pi-sign-out" label="Logout" severity="help" *ngIf="isLoggedIn"></p-button>
             </a>
         </li>
     </ul>

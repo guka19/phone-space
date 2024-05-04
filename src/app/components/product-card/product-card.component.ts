@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/shared/models/Product';
 
 @Component({
@@ -11,4 +12,5 @@ export class ProductCardComponent {
 
   @Input() smartphone!: Product;
 
+  constructor(private router: Router) {}
 }

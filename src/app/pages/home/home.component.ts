@@ -34,7 +34,7 @@ export class HomeComponent {
   constructor(private smService: SmartphoneService) {
     this.smService.getSmartphones().subscribe((data) => {
       this.topSellers = data;
-      console.log(data);
+      // console.log(data);
     })
   }
 }
