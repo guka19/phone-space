@@ -45,3 +45,25 @@
 .grid-container .tall {
     grid-row: span 2;
 }
+
+@media screen and (max-width: 980px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    nav {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    nav h1 {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+}
