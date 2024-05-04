@@ -180,7 +180,7 @@ nav strong a {
 
     nav {
         padding-left: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .container {
@@ -188,7 +188,7 @@ nav strong a {
     }
 
     .grid-container {
-        margin: 20px 0px;
+        margin: 20px 20px;
     }
 
     .filter form .price .price-inputs div {
