@@ -66,10 +66,12 @@ nav strong a {
 .filter form .price .price-inputs {
     display: flex;
     gap: 5px;
+    margin-top: 10px;
 }
 
 .filter form .price .price-inputs div {
     display: flex;
+    align-items: center;
     gap: 5px;
 }
 
@@ -77,6 +79,7 @@ nav strong a {
     border: 2px solid #333;
     outline: none;
     border-radius: 6px;
+    padding: 12px 14px;
 }
 
 .filter .brands {
@@ -120,4 +123,85 @@ nav strong a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+}
+
+@media screen and (max-width: 1184px) {
+    /* .container {
+        margin: 0px;
+    }
+
+    .grid-container {
+        margin: 20px 10px;
+    } */
+
+    .filter form .price .price-inputs {
+        flex-direction: column; 
+    }
+
+    .filter form .price .price-inputs div {
+        margin-top: 0;
+    }
+
+    .filter form .price .price-inputs div input {
+        order: -1; 
+        margin-bottom: 10px; 
+    }
+
+    .smartphones {
+        grid-column: span 2;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 964px) {
+        .container {
+        margin: 40px;
+    }
+
+    .grid-container {
+        margin: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 764px) {
+        .container {
+        margin: 20px;
+    }
+
+    .grid-container {
+        margin: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 574px) {
+
+    nav {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .container {
+        margin: 0px;
+    }
+
+    .grid-container {
+        margin: 20px 0px;
+    }
+
+    .filter form .price .price-inputs div {
+        flex-direction: column;
+    }
+
+    .filter form .price .price-inputs div input {
+        padding: 10px 2px; 
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .filter {
+        display: none;
+    }
 }

@@ -13,8 +13,8 @@ export class SmartphonesComponent {
   smartphones: Product[] = [];
 
   searchForm = this.fb.group({
-    priceMin: [0],
-    priceMax: [5000],
+    priceMin: [null],
+    priceMax: [null],
     brand: [''],
     screenSize: [''],
     ram: [0],
