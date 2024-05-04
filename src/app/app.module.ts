@@ -16,6 +16,7 @@ import { ImageSliderComponent } from './components/image-slider/image-slider.com
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { SmartphonesComponent } from './pages/smartphones/smartphones.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SmartphonesComponent } from './pages/smartphones/smartphones.component'
     ImageSliderComponent,
     NotFoundComponent,
     ProductCardComponent,
-    SmartphonesComponent
+    SmartphonesComponent,
+    AboutComponent
   ],
   imports: [
     AppRoutingModule,
