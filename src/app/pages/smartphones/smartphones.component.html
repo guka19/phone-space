@@ -171,6 +171,9 @@
             <div *ngFor="let smartphone of smartphones">
                 <app-product-card [smartphone]="smartphone"></app-product-card>
             </div>
+            <div *ngIf="smartphones.length === 0">
+                <strong>There are no smartphones listed...</strong>
+            </div>
         </section>
     </main>
 </div>
