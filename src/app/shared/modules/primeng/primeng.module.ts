@@ -7,6 +7,7 @@ import { SliderModule } from 'primeng/slider';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { ConfirmPopupModule } from 'primeng/confirmpopup';
 
 @NgModule({
   declarations: [],
@@ -17,7 +18,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     SliderModule,
     InputTextModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    ConfirmPopupModule
   ],
   exports: [
     ButtonModule,   
@@ -25,7 +27,8 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     SliderModule,
     InputTextModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    ConfirmPopupModule
   ]
 })
 export class PrimengModule { }

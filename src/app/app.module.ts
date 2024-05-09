@@ -17,6 +17,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { SmartphonesComponent } from './pages/smartphones/smartphones.component';
 import { AboutComponent } from './pages/about/about.component';
+import { OffersComponent } from './pages/offers/offers.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { AboutComponent } from './pages/about/about.component';
     NotFoundComponent,
     ProductCardComponent,
     SmartphonesComponent,
-    AboutComponent
+    AboutComponent,
+    OffersComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     AppRoutingModule,
@@ -37,7 +43,7 @@ import { AboutComponent } from './pages/about/about.component';
     PrimengModule,
     HammerModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

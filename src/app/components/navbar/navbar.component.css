@@ -56,6 +56,10 @@ header {
   color: #a855f7;
 }
 
+.cart span {
+  cursor: pointer;
+}
+
 .user-menu {
   display: flex;
   justify-content: center;

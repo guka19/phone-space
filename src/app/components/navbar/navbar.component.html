@@ -25,6 +25,9 @@
                 </li>
             </ul>
         </div>
+        <div class="cart">
+            <span (click)="goToCart()"> <i class="fa-solid fa-cart-shopping"></i> {{cartItems}} </span>
+        </div>
         <div class="user-menu">
             <p-button styleClass="btn" label="Sign In" severity="help" icon="pi pi-sign-in" *ngIf="!isLoggedIn"></p-button>
             <p-button styleClass="btn" label="Sign Up" severity="help" [text]="true" icon="pi pi-user" *ngIf="!isLoggedIn"></p-button>
