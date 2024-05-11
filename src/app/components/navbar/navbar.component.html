@@ -29,8 +29,12 @@
             <span (click)="goToCart()"> <i class="fa-solid fa-cart-shopping"></i> {{cartItems}} </span>
         </div>
         <div class="user-menu">
-            <p-button styleClass="btn" label="Sign In" severity="help" icon="pi pi-sign-in" *ngIf="!isLoggedIn"></p-button>
-            <p-button styleClass="btn" label="Sign Up" severity="help" [text]="true" icon="pi pi-user" *ngIf="!isLoggedIn"></p-button>
+            <a routerLink="/login">
+                <p-button styleClass="btn" label="Sign In" severity="help" icon="pi pi-sign-in" *ngIf="!isLoggedIn"></p-button>
+            </a>
+            <a routerLink="/register">
+                <p-button styleClass="btn" label="Sign Up" severity="help" [text]="true" icon="pi pi-user" *ngIf="!isLoggedIn"></p-button>
+            </a>
             <p-button label="გასვლა" severity="help" icon="pi pi-sign-out" *ngIf="isLoggedIn"></p-button>
         </div>
     </div>

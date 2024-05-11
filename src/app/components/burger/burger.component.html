@@ -19,10 +19,10 @@
         </li>
         <div class="line"></div>
         <li class="user">
-            <a> 
+            <a routerLink="/login"> 
                 <p-button icon="pi pi-sign-in" label="Sign In" severity="help" *ngIf="!isLoggedIn"></p-button>
             </a>
-            <a>
+            <a routerLink="/register">
                 <p-button icon="pi pi-user" label="Sign Up" severity="help" [text]="true" *ngIf="!isLoggedIn"></p-button>
             </a>
             <a>
