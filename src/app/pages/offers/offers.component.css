@@ -39,3 +39,32 @@ article {
 article img {
     width: 400px;
 }
+
+
+@media screen and (max-width: 1488px) {
+    .container {
+        max-width: 1000px;
+    }
+    
+    article img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1488px) {
+    
+    .container {
+        padding: 70px 30px;
+    }
+    
+    article {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    
+    article img {
+        width: 200px;
+    }
+}
