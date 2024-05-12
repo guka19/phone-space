@@ -19,7 +19,7 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
     InputTextModule,
     CheckboxModule,
     RadioButtonModule,
-    ConfirmPopupModule
+    ConfirmPopupModule,
   ],
   exports: [
     ButtonModule,   
@@ -28,7 +28,7 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
     InputTextModule,
     CheckboxModule,
     RadioButtonModule,
-    ConfirmPopupModule
+    ConfirmPopupModule,
   ]
 })
 export class PrimengModule { }

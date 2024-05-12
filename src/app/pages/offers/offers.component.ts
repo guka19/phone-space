@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Message, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-offers',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./offers.component.css']
 })
 export class OffersComponent {
-
+  
 }

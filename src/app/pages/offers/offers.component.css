@@ -1,0 +1,41 @@
+.grid-container {
+    font-family: 'Poppins';
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #838b8a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 70px 10px;
+    gap: 50px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+article {
+    grid-column: span 3;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+}
+
+article img {
+    width: 400px;
+}
