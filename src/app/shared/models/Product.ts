@@ -1,4 +1,5 @@
 export interface Product {
+    _id: string;
     model:             string;
     brand:             string;
     operatingSystem:   string;

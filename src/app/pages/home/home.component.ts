@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/shared/models/Product';
 import { Slide } from 'src/app/shared/models/Slide';
 import { SmartphoneService } from 'src/app/shared/services/smartphone.service';
@@ -31,7 +32,11 @@ export class HomeComponent {
     }
   ];
 
-  constructor(private smService: SmartphoneService) {
+  navigateToSmartphone(productId: string) {
+    this.router.navigate([`/smartphone/${productId}`]);
+  }
+
+  constructor(private smService: SmartphoneService, private router: Router) {
     this.smService.getSmartphones().subscribe((data) => {
       this.topSellers = data;
       // console.log(data);

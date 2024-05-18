@@ -20,6 +20,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { OffersComponent } from './pages/offers/offers.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { PreviewProductComponent } from './pages/preview-product/preview-product.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RegisterComponent } from './pages/register/register.component';
     AboutComponent,
     OffersComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PreviewProductComponent
   ],
   imports: [
     AppRoutingModule,

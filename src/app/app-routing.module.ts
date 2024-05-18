@@ -7,6 +7,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { OffersComponent } from './pages/offers/offers.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { PreviewProductComponent } from './pages/preview-product/preview-product.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'offers', component: OffersComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'smartphone/:id', component: PreviewProductComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

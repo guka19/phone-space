@@ -25,7 +25,7 @@
             <span class="best-sellers-title">Best Sellers</span>
             <div class="product-container">
                 <div *ngFor="let item of topSellers">
-                    <app-product-card [smartphone]="item"></app-product-card>
+                    <app-product-card [smartphone]="item" (click)="navigateToSmartphone(item._id)"></app-product-card>
                 </div>       
             </div>
         </section>

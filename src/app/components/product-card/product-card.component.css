@@ -6,6 +6,7 @@
     align-items: center;
     border-radius: 10px;
     border: solid 0.08rem rgb(194, 192, 192);
+    cursor: pointer;
 }
 
 .image-space {

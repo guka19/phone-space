@@ -15,5 +15,9 @@ export class SmartphoneService {
     return this.http.get<Product[]>(`${this.apiUrl}/phone-space/smartphones`);
   }
 
+  getSmartphone(productId: string): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}/phone-space/smartphones/${productId}`);
+  }
+
   constructor(private http: HttpClient) { }
 }
