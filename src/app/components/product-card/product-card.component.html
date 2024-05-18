@@ -1,8 +1,8 @@
 <div class="card">
-    <div class="image-space">
+    <div class="image-space" (click)="navigateToSmartphone(smartphone._id)">
         <img class="image" [src]="smartphone.imageUrls[0]" [alt]="smartphone.model">
     </div>
-    <div class="info">
+    <div class="info" (click)="navigateToSmartphone(smartphone._id)">
         <p class="price"> {{smartphone.price}}$ </p>
         <span class="product-title"> {{ smartphone.brand }} {{ smartphone.model }} / {{smartphone.storage}}GB </span>
     </div>

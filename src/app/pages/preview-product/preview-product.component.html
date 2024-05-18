@@ -1,2 +1,13 @@
-<p>preview-product works!</p>
-    
+<main class="grid-container">
+  <section class="about">
+    <div class="navigation-info">
+        <strong class=""> Home <i class="pi pi-angle-right"></i> Smartphones <i class="pi pi-angle-right"></i> {{smartphone.brand}} </strong>
+    </div>
+    <p-galleria [value]="smartphone.imageUrls" [showIndicators]="true" [showThumbnails]="false" [changeItemOnIndicatorHover]="true" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px' }"> 
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item" style="width: 100%; display: block;" />
+        </ng-template>
+    </p-galleria>
+  </section>
+  <section class="buy-options"></section>
+</main>

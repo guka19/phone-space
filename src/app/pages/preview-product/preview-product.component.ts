@@ -18,12 +18,28 @@ export class PreviewProductComponent implements OnInit {
       this.productId = c.get('id');
 
       if (this.productId) {
-        this.smService.getSmartphone(this.productId).subscribe(() => {
-
+        this.smService.getSmartphone(this.productId).subscribe((data) => {
+          this.smartphone = data;
+          console.log(data);
         })
       }
     })
   }
+
+  responsiveOptions: any[] = [
+    {
+        breakpoint: '1024px',
+        numVisible: 5
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 3
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1
+    }
+];
 
   constructor(private route: ActivatedRoute, private smService: SmartphoneService) {
 

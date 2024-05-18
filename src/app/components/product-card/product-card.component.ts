@@ -12,5 +12,9 @@ export class ProductCardComponent {
 
   @Input() smartphone!: Product;
 
+  navigateToSmartphone(productId: string) {
+    this.router.navigate([`/smartphone/${productId}`]);
+  }
+
   constructor(private router: Router) {}
 }
