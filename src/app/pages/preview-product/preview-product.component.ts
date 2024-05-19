@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/shared/models/Product';
 import { SmartphoneService } from 'src/app/shared/services/smartphone.service';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-preview-product',
@@ -12,6 +13,13 @@ export class PreviewProductComponent implements OnInit {
 
   productId!: string | null;
   smartphone!: Product;
+  items: MenuItem[] | undefined;
+  home: MenuItem | undefined;
+  isInFavorites = false;
+
+  toggleFavorites() {
+    this.isInFavorites = !this.isInFavorites;
+  }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(c => {
@@ -24,6 +32,10 @@ export class PreviewProductComponent implements OnInit {
         })
       }
     })
+
+    this.items = [{ label: 'Smartphones' }, {label: 'Product'}];
+
+        this.home = { icon: 'pi pi-home', routerLink: '/' };
   }
 
   responsiveOptions: any[] = [

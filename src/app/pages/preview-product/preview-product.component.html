@@ -1,13 +1,34 @@
 <main class="grid-container">
-  <section class="about">
-    <div class="navigation-info">
-        <strong class=""> Home <i class="pi pi-angle-right"></i> Smartphones <i class="pi pi-angle-right"></i> {{smartphone.brand}} </strong>
+  <section class="navigation-info">
+    <div class="card flex justify-content-center">
+      <p-breadcrumb
+        class="max-w-full"
+        [model]="items"
+        [home]="home"
+      ></p-breadcrumb>
     </div>
-    <p-galleria [value]="smartphone.imageUrls" [showIndicators]="true" [showThumbnails]="false" [changeItemOnIndicatorHover]="true" [responsiveOptions]="responsiveOptions" [containerStyle]="{ 'max-width': '640px' }"> 
+  </section>
+  <section class="about">
+    <div class="first-look">
+      <span class="title"> {{smartphone.brand}} {{smartphone.model}} {{smartphone.ram}}/{{smartphone.storage}}GB {{smartphone.colorOptions[0]}} </span>
+      <p-galleria
+        [value]="smartphone.imageUrls"
+        [showIndicators]="true"
+        [showThumbnails]="false"
+        [changeItemOnIndicatorHover]="true"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{ 'max-width': '640px' }"
+      >
         <ng-template pTemplate="item" let-item>
-            <img [src]="item" style="width: 100%; display: block;" />
+          <img [src]="item" style="width: 300px; display: block" />
         </ng-template>
-    </p-galleria>
+      </p-galleria>
+      <span class="favorites" (click)="toggleFavorites()" *ngIf="!isInFavorites">Add to favorites <i class="pi pi-heart"></i></span>
+      <span class="favorites" (click)="toggleFavorites()" *ngIf="isInFavorites">Remove from favorites <i class="pi pi-heart-fill"></i></span>
+    </div>
+    <div class="info">
+      <span>info</span>
+    </div>
   </section>
   <section class="buy-options"></section>
 </main>
