@@ -131,7 +131,15 @@ a {
 }
 
 .brands-mobile {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-mobile img {
+    width: 300px;
+    cursor: pointer;
 }
 
 .slider-container {
